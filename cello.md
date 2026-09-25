@@ -2,16 +2,34 @@
 
 ## Description
 
-## Structure and Components
+## Structure & Components
+
+## How It Works
+
+## Tuning
+
+## Sound & Range
+
+## Playing Techniques
+
+## Sizes
+
+## Materials
 
 ## History
 
 ## Oldest Surviving Cellos
 
-## Makers and Luthiers
+## Makers & Luthiers
 
-## Composers and Repertoire
+## Composers & Repertoire
 
-## Use in Music
+## Role in Ensembles
+
+## Modern Uses
+
+## Maintenance
+
+## Terminology
 
 ## Sources
