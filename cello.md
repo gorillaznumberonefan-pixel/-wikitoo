@@ -1,15 +1,17 @@
 # Cello
 
+## Description
+
+## Structure and Components
+
 ## History
 
-## Construction
+## Oldest Surviving Cellos
 
-## Strings and tuning
+## Makers and Luthiers
 
-## Playing
+## Composers and Repertoire
 
-## Use in music
-
-## See also
+## Use in Music
 
 ## Sources
