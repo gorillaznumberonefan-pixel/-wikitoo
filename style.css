@@ -2,6 +2,9 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 100px;
+    background-color: white;
+    color: black;
+    transition: 0.2s;
 }
 
 h1 {
@@ -18,4 +21,27 @@ button {
     padding: 10px 16px;
     font-size: 16px;
     cursor: pointer;
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Dark mode */
+
+body.dark {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark input {
+    background-color: #242424;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark input::placeholder {
+    color: #aaa;
 }
