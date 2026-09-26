@@ -18,7 +18,7 @@ async function search() {
 
         const text = await response.text();
 
-        document.getElementById("content").textContent = text;
+        document.getElementById("content").innerHTML = marked.parse(text);
     } catch (error) {
         alert("Something went wrong while searching.");
     }
