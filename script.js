@@ -1,12 +1,27 @@
-function search() {
-    const query = document.getElementById("search").value;
+async function search() {
+    const query = document.getElementById("search").value.trim();
 
-    if (query.trim() === "") {
+    if (query === "") {
         alert("Please enter something to search for.");
         return;
     }
 
-    alert("You searched for: " + query);
+    const fileName = query.toLowerCase() + ".md";
+
+    try {
+        const response = await fetch(fileName);
+
+        if (!response.ok) {
+            alert("Page not found.");
+            return;
+        }
+
+        const text = await response.text();
+
+        document.getElementById("content").textContent = text;
+    } catch (error) {
+        alert("Something went wrong while searching.");
+    }
 }
 
 function toggleTheme() {
