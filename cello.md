@@ -39,20 +39,20 @@ Modern uses of the cello are in orchestras, ensembles, solo performance, and bas
 ## Maintenance
 A cello is kept in a room temperature spot where it will stay upright and temperature won’t change. If needed, the strings are unwound and replaced. Loosen the bow for storage. If damaged, the tailpiece should be replaced. If damaged, the endpin should be replaced.
 ## Terminology
--The double bass is another instrument in the violin family and will be covered in another article
--A fingerboard is a fretted or not fretted board to play notes.
--A pegbox is where the pegs of an instrument go.
--Tuning pegs are pegs that strings attach to and are tuned by on an instrument.
--Fine tuners, found mostly on instruments in the violin family, are almost like tuning pegs, but they slightly adjust the string rather than big adjustments.
--An endpin is a metal rod that sticks out from an instrument, usually a double bass or cello, that helps keep the instrument where it is supposed to be and elevated.
--A scroll is found on top of the pegbox of an instrument and serves little to no purpose other than decoration.
--A tailpiece is found on the bottom/farthest side of an instrument in the violin family and is where the other end of the string goes, and usually has fine tuners.
--Rosin is a material that aids in the production of sound on an instrument and goes onto the hair of a bow. It usually comes in rectangular prisms or short cylinders.
--F-holes are holes on an instrument in the violin family, and help make the sound louder.
--Col arco is when a stringed instrument player uses a bow.
--Pizzicato is when a stringed instrument player plucks the strings.
--The frog of a bow is found on the opposite side of the tip.
--A luthier is an instrument maker who specializes in stringed instruments.
+- The double bass is another instrument in the violin family and will be covered in another article
+- A fingerboard is a fretted or not fretted board to play notes.
+- A pegbox is where the pegs of an instrument go.
+- Tuning pegs are pegs that strings attach to and are tuned by on an instrument.
+- Fine tuners, found mostly on instruments in the violin family, are almost like tuning pegs, but they slightly adjust the string rather than big adjustments.
+- An endpin is a metal rod that sticks out from an instrument, usually a double bass or cello, that helps keep the instrument where it is supposed to be and elevated.
+- A scroll is found on top of the pegbox of an instrument and serves little to no purpose other than decoration.
+- A tailpiece is found on the bottom/farthest side of an instrument in the violin family and is where the other end of the string goes, and usually has fine tuners.
+- Rosin is a material that aids in the production of sound on an instrument and goes onto the hair of a bow. It usually comes in rectangular prisms or short cylinders.
+- F-holes are holes on an instrument in the violin family, and help make the sound louder.
+- Col arco is when a stringed instrument player uses a bow.
+- Pizzicato is when a stringed instrument player plucks the strings.
+- The frog of a bow is found on the opposite side of the tip.
+- A luthier is an instrument maker who specializes in stringed instruments.
 ## Sources
 - Encyclopaedia Britannica — “Cello”
 - The Metropolitan Museum of Art — “The ‘King’ Cello by Andrea Amati”
