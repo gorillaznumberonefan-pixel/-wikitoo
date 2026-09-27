@@ -35,3 +35,45 @@ function toggleTheme() {
         button.textContent = "🌙 Dark Mode";
     }
 }
+
+
+// Show the bug report form
+function showBugReport() {
+    document.getElementById("bug-report").style.display = "block";
+}
+
+
+// Hide the bug report form
+function hideBugReport() {
+    document.getElementById("bug-report").style.display = "none";
+}
+
+
+// Submit the bug report
+function submitBugReport() {
+    const page = document.getElementById("bug-page").value.trim();
+    const description = document.getElementById("bug-description").value.trim();
+    const expected = document.getElementById("bug-expected").value.trim();
+
+    if (description === "") {
+        alert("Please describe the bug.");
+        return;
+    }
+
+    const subject = encodeURIComponent("Wikitoo Bug Report");
+
+    const body = encodeURIComponent(
+        "Wikitoo Bug Report\n\n" +
+        "Page: " + (page || "Not specified") + "\n\n" +
+        "What went wrong:\n" +
+        description + "\n\n" +
+        "What I expected:\n" +
+        (expected || "Not specified")
+    );
+
+    window.location.href =
+        "mailto:gorillaznumberonefan@icloud.com?subject=" +
+        subject +
+        "&body=" +
+        body;
+}
