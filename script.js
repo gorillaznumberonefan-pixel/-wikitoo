@@ -77,3 +77,11 @@ function submitBugReport() {
         "&body=" +
         body;
 }
+
+
+// Pressing Enter in the search box searches
+document.getElementById("search").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        search();
+    }
+});
