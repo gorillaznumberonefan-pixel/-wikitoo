@@ -35,22 +35,29 @@ button {
 /* Browse menu */
 
 #browse-menu {
+    display: block;
     text-align: left;
-    max-width: 600px;
+    width: 600px;
+    max-width: 90%;
     margin: 20px auto;
 }
 
 #browse-menu details {
-    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 #browse-menu summary {
+    display: block;
     cursor: pointer;
     font-size: 22px;
     font-weight: bold;
 }
 
 .browse-letter {
+    display: block;
+    width: 100%;
     font-size: 20px;
     font-weight: bold;
     margin-top: 15px;
@@ -58,16 +65,20 @@ button {
 }
 
 .browse-article {
-    display: block;
+    display: block !important;
+    width: 100%;
     margin-left: 25px;
     margin-bottom: 4px;
 }
 
 .browse-article button {
+    display: block !important;
+    width: auto;
     background: none;
     border: none;
     padding: 2px 0;
     font-size: 17px;
+    text-align: left;
 }
 
 
