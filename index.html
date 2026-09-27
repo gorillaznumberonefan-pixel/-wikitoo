@@ -11,16 +11,18 @@
 
     <button id="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
 
-    <button id="browse-button">📚 Browse</button>
-
-    <div id="browse-menu">
-        <p>Browse topics coming soon...</p>
-    </div>
-
     <h1>Wikitoo</h1>
 
     <input type="text" id="search" placeholder="What do you want to know?">
     <button onclick="search()">Search</button>
+
+    <!-- Browse Button -->
+    <button onclick="toggleBrowse()">📚 Browse</button>
+
+    <!-- Browse Menu -->
+    <div id="browse-menu" style="display: none;">
+        Loading...
+    </div>
 
     <!-- Bug Report Button -->
     <button onclick="showBugReport()">🐛 Report a Bug</button>
@@ -46,5 +48,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/marked@4.3.0/marked.min.js"></script>
     <script src="script.js"></script>
+
 </body>
 </html>
