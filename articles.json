@@ -1,6 +1,18 @@
 [
-    "cello.md",
-    "okapi.md",
-    "boats.md",
-    "cars.md"
+    {
+        "file": "cello.md",
+        "topic": "Music"
+    },
+    {
+        "file": "okapi.md",
+        "topic": "Animals"
+    },
+    {
+        "file": "boats.md",
+        "topic": "Transportation"
+    },
+    {
+        "file": "cars.md",
+        "topic": "Transportation"
+    }
 ]
