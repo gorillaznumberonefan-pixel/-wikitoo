@@ -1,3 +1,14 @@
+async function loadArticles() {
+    const response = await fetch("articles.json");
+
+    if (!response.ok) {
+        throw new Error("Could not load article list.");
+    }
+
+    return await response.json();
+}
+
+
 async function search() {
     const query = document.getElementById("search").value.trim().toLowerCase();
 
@@ -7,17 +18,10 @@ async function search() {
     }
 
     try {
-        const response = await fetch("articles.json");
+        const articles = await loadArticles();
 
-        if (!response.ok) {
-            alert("Could not load article list.");
-            return;
-        }
-
-        const articles = await response.json();
-
-        const matches = articles.filter(fileName =>
-            fileName.toLowerCase().includes(query)
+        const matches = articles.filter(article =>
+            article.file.toLowerCase().includes(query)
         );
 
         if (matches.length === 0) {
@@ -28,11 +32,11 @@ async function search() {
 
         let resultsHTML = "<h2>Search Results</h2>";
 
-        matches.forEach(fileName => {
-            const title = fileName.replace(".md", "");
+        matches.forEach(article => {
+            const title = article.file.replace(".md", "");
 
             resultsHTML += `
-                <button onclick="openArticle('${fileName}')">
+                <button onclick="openArticle('${article.file}')">
                     ${title}
                 </button>
             `;
@@ -61,6 +65,75 @@ async function openArticle(fileName) {
 
     } catch (error) {
         alert("Something went wrong while opening the article.");
+    }
+}
+
+
+// Browse menu
+async function toggleBrowse() {
+    const menu = document.getElementById("browse-menu");
+
+    if (menu.style.display === "none" || menu.style.display === "") {
+        menu.style.display = "block";
+        await loadBrowseMenu();
+    } else {
+        menu.style.display = "none";
+    }
+}
+
+
+// Build the Browse menu
+async function loadBrowseMenu() {
+    const menu = document.getElementById("browse-menu");
+
+    try {
+        const articles = await loadArticles();
+
+        const topics = {};
+
+        articles.forEach(article => {
+            if (!topics[article.topic]) {
+                topics[article.topic] = [];
+            }
+
+            topics[article.topic].push(article);
+        });
+
+        let html = "";
+
+        Object.keys(topics).sort().forEach(topic => {
+            html += `<details>`;
+            html += `<summary>${topic}</summary>`;
+
+            const topicArticles = topics[topic].sort((a, b) =>
+                a.file.localeCompare(b.file)
+            );
+
+            let currentLetter = "";
+
+            topicArticles.forEach(article => {
+                const title = article.file.replace(".md", "");
+                const firstLetter = title.charAt(0).toUpperCase();
+
+                if (firstLetter !== currentLetter) {
+                    currentLetter = firstLetter;
+                    html += `<strong>${currentLetter}</strong>`;
+                }
+
+                html += `
+                    <button onclick="openArticle('${article.file}')">
+                        ${title}
+                    </button>
+                `;
+            });
+
+            html += `</details>`;
+        });
+
+        menu.innerHTML = html;
+
+    } catch (error) {
+        menu.innerHTML = "<p>Could not load browse menu.</p>";
     }
 }
 
