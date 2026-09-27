@@ -1,13 +1,52 @@
 async function search() {
-    const query = document.getElementById("search").value.trim();
+    const query = document.getElementById("search").value.trim().toLowerCase();
 
     if (query === "") {
         alert("Please enter something to search for.");
         return;
     }
 
-    const fileName = query.toLowerCase() + ".md";
+    try {
+        const response = await fetch("articles.json");
 
+        if (!response.ok) {
+            alert("Could not load article list.");
+            return;
+        }
+
+        const articles = await response.json();
+
+        const matches = articles.filter(fileName =>
+            fileName.toLowerCase().includes(query)
+        );
+
+        if (matches.length === 0) {
+            document.getElementById("content").innerHTML =
+                "<h2>No results found.</h2>";
+            return;
+        }
+
+        let resultsHTML = "<h2>Search Results</h2>";
+
+        matches.forEach(fileName => {
+            const title = fileName.replace(".md", "");
+
+            resultsHTML += `
+                <button onclick="openArticle('${fileName}')">
+                    ${title}
+                </button>
+            `;
+        });
+
+        document.getElementById("content").innerHTML = resultsHTML;
+
+    } catch (error) {
+        alert("Something went wrong while searching.");
+    }
+}
+
+
+async function openArticle(fileName) {
     try {
         const response = await fetch(fileName);
 
@@ -19,10 +58,12 @@ async function search() {
         const text = await response.text();
 
         document.getElementById("content").innerHTML = marked.parse(text);
+
     } catch (error) {
-        alert("Something went wrong while searching.");
+        alert("Something went wrong while opening the article.");
     }
 }
+
 
 function toggleTheme() {
     document.body.classList.toggle("dark");
