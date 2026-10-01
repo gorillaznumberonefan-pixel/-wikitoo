@@ -1,214 +1,47 @@
 [
     {
         "file": "cello.md",
+        "title": "Cello",
         "topic": "Music"
     },
     {
         "file": "okapi.md",
+        "title": "Okapi",
         "topic": "Animals"
     },
     {
         "file": "boats.md",
+        "title": "Boats",
         "topic": "Transportation"
     },
     {
         "file": "cars.md",
+        "title": "Cars",
         "topic": "Transportation"
     },
     {
         "file": "double-bass.md",
+        "title": "Double Bass",
         "topic": "Music"
     },
     {
         "file": "violin.md",
+        "title": "Violin",
         "topic": "Music"
     },
     {
         "file": "viola.md",
+        "title": "Viola",
         "topic": "Music"
     },
     {
         "file": "trumpet.md",
+        "title": "Trumpet",
         "topic": "Music"
     },
     {
         "file": "trombone.md",
+        "title": "Trombone",
         "topic": "Music"
-    },
-    {
-        "file": "plant.md",
-        "topic": "Plantae"
-    },
-    {
-        "file": "monstera.md",
-        "topic": "Plantae"
-    },
-    {
-        "file": "pothos.md",
-        "topic": "Plantae"
-    },
-    {
-        "file": "snake-plant.md",
-        "topic": "Plantae"
-    },
-    {
-        "file": "bamboo.md",
-        "topic": "Plantae"
-    },
-    {
-        "file": "trees.md",
-        "topic": "Plantae"
-    },
-    {
-        "file": "aloe-vera.md",
-        "topic": "Plantae"
-    },
-    {
-        "file": "pandas.md",
-        "topic": "Animalia"
-    },
-    {
-        "file": "bears.md",
-        "topic": "Animalia"
-    },
-    {
-        "file": "polar-bears.md",
-        "topic": "Animalia"
-    },
-    {
-        "file": "cows.md",
-        "topic": "Animalia"
-    },
-    {
-        "file": "cats.md",
-        "topic": "Animalia"
-    },
-    {
-        "file": "dogs.md",
-        "topic": "Animalia"
-    },
-    {
-        "file": "fish.md",
-        "topic": "Animalia"
-    },
-    {
-        "file": "foxes.md",
-        "topic": "Animalia"
-    },
-    {
-        "file": "humans.md",
-        "topic": "Animalia"
-    },
-    {
-        "file": "pigs.md",
-        "topic": "Animalia"
-    },
-    {
-        "file": "rabbits.md",
-        "topic": "Animalia"
-    },
-    {
-        "file": "elephants.md",
-        "topic": "Animalia"
-    },
-    {
-        "file": "science.md",
-        "topic": "Science"
-    },
-    {
-        "file": "lead.md",
-        "topic": "Science"
-    },
-    {
-        "file": "gold.md",
-        "topic": "Science"
-    },
-    {
-        "file": "black-holes.md",
-        "topic": "Science"
-    },
-    {
-        "file": "wormholes.md",
-        "topic": "Science"
-    },
-    {
-        "file": "space.md",
-        "topic": "Science"
-    },
-    {
-        "file": "global-warming.md",
-        "topic": "Earth & Environment"
-    },
-    {
-        "file": "sleep.md",
-        "topic": "Biology & Human Body"
-    },
-    {
-        "file": "tech.md",
-        "topic": "Technology"
-    },
-    {
-        "file": "computer.md",
-        "topic": "Technology"
-    },
-    {
-        "file": "gaming.md",
-        "topic": "Technology"
-    },
-    {
-        "file": "pencil.md",
-        "topic": "Objects & Materials"
-    },
-    {
-        "file": "eraser.md",
-        "topic": "Objects & Materials"
-    },
-    {
-        "file": "graphite.md",
-        "topic": "Objects & Materials"
-    },
-    {
-        "file": "ink.md",
-        "topic": "Objects & Materials"
-    },
-    {
-        "file": "pen.md",
-        "topic": "Objects & Materials"
-    },
-    {
-        "file": "paper.md",
-        "topic": "Objects & Materials"
-    },
-    {
-        "file": "cones.md",
-        "topic": "Objects & Materials"
-    },
-    {
-        "file": "book.md",
-        "topic": "Language & Literature"
-    },
-    {
-        "file": "writing.md",
-        "topic": "Language & Literature"
-    },
-    {
-        "file": "language.md",
-        "topic": "Language & Literature"
-    },
-    {
-        "file": "wwii.md",
-        "topic": "History"
-    },
-    {
-        "file": "atomic-bombs.md",
-        "topic": "History"
-    },
-    {
-        "file": "nuclear-bombs.md",
-        "topic": "History"
-    },
-    {
-        "file": "usa.md",
-        "topic": "United States"
     }
 ]
