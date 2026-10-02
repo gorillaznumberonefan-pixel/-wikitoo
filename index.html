@@ -44,6 +44,26 @@
         <button onclick="hideBugReport()">Cancel</button>
     </div>
 
+    <!-- Missing Page Button -->
+    <button onclick="showMissingPageReport()">📄 Report a Missing Page</button>
+
+    <!-- Missing Page Report Form -->
+    <div id="missing-page-report" style="display: none;">
+        <h2>📄 Report a Missing Page</h2>
+
+        <label for="missing-page">What page/article are you looking for?</label>
+        <input type="text" id="missing-page" placeholder="Example: Violin">
+
+        <label for="missing-details">Anything else you want to tell us?</label>
+        <textarea id="missing-details" placeholder="Optional"></textarea>
+
+        <label for="missing-sources">Sources you'd like to see on this missing page</label>
+        <textarea id="missing-sources" placeholder="Optional — links or names of sources you'd like us to consider"></textarea>
+
+        <button onclick="submitMissingPageReport()">Send Missing Page Report</button>
+        <button onclick="hideMissingPageReport()">Cancel</button>
+    </div>
+
     <div id="content"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/marked@4.3.0/marked.min.js"></script>
