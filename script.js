@@ -236,9 +236,15 @@ function submitMissingPageReport() {
 }
 
 
-// Language menu test
+// Language menu
 function toggleLanguage() {
-    alert("Language button works!");
+    const menu = document.getElementById("language-menu");
+
+    if (menu.style.display === "none" || menu.style.display === "") {
+        menu.style.display = "block";
+    } else {
+        menu.style.display = "none";
+    }
 }
 
 
