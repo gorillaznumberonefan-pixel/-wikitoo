@@ -236,6 +236,24 @@ function submitMissingPageReport() {
 }
 
 
+// Language menu
+function toggleLanguage() {
+    const menu = document.getElementById("language-menu");
+
+    if (menu.style.display === "none" || menu.style.display === "") {
+        menu.style.display = "block";
+    } else {
+        menu.style.display = "none";
+    }
+}
+
+
+// Select a language
+function selectLanguage(language) {
+    alert("Language selected: " + language);
+}
+
+
 // Pressing Enter in the search box searches
 document.getElementById("search").addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
