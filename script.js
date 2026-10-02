@@ -193,6 +193,49 @@ function submitBugReport() {
 }
 
 
+// Show the missing page report form
+function showMissingPageReport() {
+    document.getElementById("missing-page-report").style.display = "block";
+}
+
+
+// Hide the missing page report form
+function hideMissingPageReport() {
+    document.getElementById("missing-page-report").style.display = "none";
+}
+
+
+// Submit the missing page report
+function submitMissingPageReport() {
+    const page = document.getElementById("missing-page").value.trim();
+    const details = document.getElementById("missing-details").value.trim();
+    const sources = document.getElementById("missing-sources").value.trim();
+
+    if (page === "") {
+        alert("Please tell us what page or article you're looking for.");
+        return;
+    }
+
+    const subject = encodeURIComponent("Wikitoo Missing Page Report");
+
+    const body = encodeURIComponent(
+        "Wikitoo Missing Page Report\n\n" +
+        "Page/article requested:\n" +
+        page + "\n\n" +
+        "Anything else:\n" +
+        (details || "Not specified") + "\n\n" +
+        "Sources you'd like to see:\n" +
+        (sources || "Not specified")
+    );
+
+    window.location.href =
+        "mailto:gorillaznumberonefan@icloud.com?subject=" +
+        subject +
+        "&body=" +
+        body;
+}
+
+
 // Pressing Enter in the search box searches
 document.getElementById("search").addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
