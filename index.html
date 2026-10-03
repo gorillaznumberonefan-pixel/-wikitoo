@@ -1,10 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Wikitoo</title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -14,87 +21,133 @@
     <h1>Wikitoo</h1>
 
     <input type="text" id="search" placeholder="What do you want to know?">
+
     <button id="search-button" onclick="search()">Search</button>
 
     <!-- Browse Button -->
+
     <button id="browse-button" onclick="toggleBrowse()">📚 Browse</button>
 
     <!-- Browse Menu -->
+
     <div id="browse-menu" style="display: none;">
+
         Loading...
+
     </div>
 
     <!-- Bug Report Button -->
+
     <button id="bug-button" onclick="showBugReport()">🐛 Report a Bug</button>
 
     <!-- Bug Report Form -->
+
     <div id="bug-report" style="display: none;">
+
         <h2>🐛 Report a Bug</h2>
 
         <label for="bug-page">What page were you on?</label>
+
         <input type="text" id="bug-page" placeholder="Example: Cello">
 
         <label for="bug-description">What went wrong?</label>
+
         <textarea id="bug-description" placeholder="Describe the bug..."></textarea>
 
         <label for="bug-expected">What did you expect to happen?</label>
+
         <textarea id="bug-expected" placeholder="Describe what you expected..."></textarea>
 
         <button onclick="submitBugReport()">Send Bug Report</button>
+
         <button onclick="hideBugReport()">Cancel</button>
+
     </div>
 
     <!-- Missing Page Button -->
+
     <button id="missing-page-button" onclick="showMissingPageReport()">📄 Report a Missing Page</button>
 
     <!-- Missing Page Report Form -->
+
     <div id="missing-page-report" style="display: none;">
+
         <h2>📄 Report a Missing Page</h2>
 
         <label for="missing-page">What page/article are you looking for?</label>
+
         <input type="text" id="missing-page" placeholder="Example: Violin">
 
         <label for="missing-details">Anything else you want to tell us?</label>
+
         <textarea id="missing-details" placeholder="Optional"></textarea>
 
         <label for="missing-sources">Sources you'd like to see on this missing page</label>
+
         <textarea id="missing-sources" placeholder="Optional — links or names of sources you'd like us to consider"></textarea>
 
         <button onclick="submitMissingPageReport()">Send Missing Page Report</button>
+
         <button onclick="hideMissingPageReport()">Cancel</button>
+
     </div>
 
     <!-- Language Button -->
+
     <button id="language-button" onclick="toggleLanguage()">🌐 Language</button>
 
     <!-- Language Menu -->
+
     <div id="language-menu" style="display: none;">
+
         <button onclick="selectLanguage('English')">🇺🇸 English</button>
-        <button onclick="selectLanguage('Spanish')">🇪🇸 Spanish</button>
-        <button onclick="selectLanguage('Chinese')">🇨🇳 Chinese (Mandarin)</button>
-        <button onclick="selectLanguage('Hindi')">🇮🇳 Hindi</button>
-        <button onclick="selectLanguage('Bengali')">🇧🇩 Bengali</button>
-        <button onclick="selectLanguage('Portuguese')">🇵🇹 Portuguese</button>
-        <button onclick="selectLanguage('Russian')">🇷🇺 Russian</button>
-        <button onclick="selectLanguage('Japanese')">🇯🇵 Japanese</button>
-        <button onclick="selectLanguage('German')">🇩🇪 German</button>
-        <button onclick="selectLanguage('French')">🇫🇷 French</button>
-        <button onclick="selectLanguage('Vietnamese')">🇻🇳 Vietnamese</button>
-        <button onclick="selectLanguage('Turkish')">🇹🇷 Turkish</button>
-        <button onclick="selectLanguage('Korean')">🇰🇷 Korean</button>
-        <button onclick="selectLanguage('Italian')">🇮🇹 Italian</button>
-        <button onclick="selectLanguage('Arabic')">🇸🇦 Arabic</button>
-        <button onclick="selectLanguage('Dutch')">🇳🇱 Dutch</button>
-        <button onclick="selectLanguage('Polish')">🇵🇱 Polish</button>
-        <button onclick="selectLanguage('Ukrainian')">🇺🇦 Ukrainian</button>
-        <button onclick="selectLanguage('Indonesian')">🇮🇩 Indonesian</button>
-        <button onclick="selectLanguage('Greek')">🇬🇷 Greek</button>
+
+        <button onclick="selectLanguage('Spanish')">🇪🇸 Español</button>
+
+        <button onclick="selectLanguage('Chinese')">🇨🇳 中文</button>
+
+        <button onclick="selectLanguage('Hindi')">🇮🇳 हिन्दी</button>
+
+        <button onclick="selectLanguage('Bengali')">🇧🇩 বাংলা</button>
+
+        <button onclick="selectLanguage('Portuguese')">🇵🇹 Português</button>
+
+        <button onclick="selectLanguage('Russian')">🇷🇺 Русский</button>
+
+        <button onclick="selectLanguage('Japanese')">🇯🇵 日本語</button>
+
+        <button onclick="selectLanguage('German')">🇩🇪 Deutsch</button>
+
+        <button onclick="selectLanguage('French')">🇫🇷 Français</button>
+
+        <button onclick="selectLanguage('Vietnamese')">🇻🇳 Tiếng Việt</button>
+
+        <button onclick="selectLanguage('Turkish')">🇹🇷 Türkçe</button>
+
+        <button onclick="selectLanguage('Korean')">🇰🇷 한국어</button>
+
+        <button onclick="selectLanguage('Italian')">🇮🇹 Italiano</button>
+
+        <button onclick="selectLanguage('Arabic')">🇸🇦 العربية</button>
+
+        <button onclick="selectLanguage('Dutch')">🇳🇱 Nederlands</button>
+
+        <button onclick="selectLanguage('Polish')">🇵🇱 Polski</button>
+
+        <button onclick="selectLanguage('Ukrainian')">🇺🇦 Українська</button>
+
+        <button onclick="selectLanguage('Indonesian')">🇮🇩 Bahasa Indonesia</button>
+
+        <button onclick="selectLanguage('Greek')">🇬🇷 Ελληνικά</button>
+
     </div>
 
     <div id="content"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/marked@4.3.0/marked.min.js"></script>
+
     <script src="script.js"></script>
 
 </body>
+
 </html>
