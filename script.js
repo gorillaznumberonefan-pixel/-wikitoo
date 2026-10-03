@@ -284,6 +284,9 @@ async function selectLanguage(language) {
         document.getElementById("bug-button").textContent =
             translation.bugButton;
 
+        document.getElementById("missing-page-button").textContent =
+            translation.missingPageButton;
+
         document.getElementById("language-button").textContent =
             translation.languageButton;
 
