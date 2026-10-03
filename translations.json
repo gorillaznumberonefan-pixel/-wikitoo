@@ -1,0 +1,21 @@
+{
+    "English": {
+        "searchButton": "Search",
+        "searchPlaceholder": "What do you want to know?",
+        "browseButton": "📚 Browse",
+        "bugButton": "🐛 Report a Bug",
+        "languageButton": "🌐 Language",
+        "darkMode": "🌙 Dark Mode",
+        "lightMode": "☀️ Light Mode"
+    },
+
+    "Spanish": {
+        "searchButton": "Buscar",
+        "searchPlaceholder": "¿Qué quieres saber?",
+        "browseButton": "📚 Explorar",
+        "bugButton": "🐛 Reportar un error",
+        "languageButton": "🌐 Idioma",
+        "darkMode": "🌙 Modo oscuro",
+        "lightMode": "☀️ Modo claro"
+    }
+}
