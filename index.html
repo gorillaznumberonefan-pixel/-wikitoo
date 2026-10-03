@@ -14,18 +14,21 @@
     <h1>Wikitoo</h1>
 
     <input type="text" id="search" placeholder="What do you want to know?">
-    <button onclick="search()">Search</button>
+    <button id="search-button" onclick="search()">Search</button>
 
     <!-- Browse Button -->
-    <button onclick="toggleBrowse()">📚 Browse</button>
+    <button id="browse-button" onclick="toggleBrowse()">📚 Browse</button>
 
     <!-- Browse Menu -->
     <div id="browse-menu" style="display: none;">
         Loading...
     </div>
 
+    <!-- Bug Report Button -->
+    <button id="bug-button" onclick="showBugReport()">🐛 Report a Bug</button>
+
     <!-- Language Button -->
-    <button onclick="toggleLanguage()">🌐 Language</button>
+    <button id="language-button" onclick="toggleLanguage()">🌐 Language</button>
 
     <!-- Language Menu -->
     <div id="language-menu" style="display: none;">
@@ -51,9 +54,6 @@
         <button onclick="selectLanguage('Greek')">🇬🇷 Greek</button>
     </div>
 
-    <!-- Bug Report Button -->
-    <button onclick="showBugReport()">🐛 Report a Bug</button>
-
     <!-- Bug Report Form -->
     <div id="bug-report" style="display: none;">
         <h2>🐛 Report a Bug</h2>
@@ -69,26 +69,6 @@
 
         <button onclick="submitBugReport()">Send Bug Report</button>
         <button onclick="hideBugReport()">Cancel</button>
-    </div>
-
-    <!-- Missing Page Button -->
-    <button onclick="showMissingPageReport()">📄 Report a Missing Page</button>
-
-    <!-- Missing Page Report Form -->
-    <div id="missing-page-report" style="display: none;">
-        <h2>📄 Report a Missing Page</h2>
-
-        <label for="missing-page">What page/article are you looking for?</label>
-        <input type="text" id="missing-page" placeholder="Example: Violin">
-
-        <label for="missing-details">Anything else you want to tell us?</label>
-        <textarea id="missing-details" placeholder="Optional"></textarea>
-
-        <label for="missing-sources">Sources you'd like to see on this missing page</label>
-        <textarea id="missing-sources" placeholder="Optional — links or names of sources you'd like us to consider"></textarea>
-
-        <button onclick="submitMissingPageReport()">Send Missing Page Report</button>
-        <button onclick="hideMissingPageReport()">Cancel</button>
     </div>
 
     <div id="content"></div>
