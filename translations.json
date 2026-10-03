@@ -5,6 +5,8 @@
         "browseButton": "📚 Browse",
         "bugButton": "🐛 Report a Bug",
         "languageButton": "🌐 Language",
+        "missingPageButton": "📄 Report a Missing Page",
+        "missingPageTitle": "📄 Report a Missing Page",
         "darkMode": "🌙 Dark Mode",
         "lightMode": "☀️ Light Mode"
     },
@@ -15,6 +17,8 @@
         "browseButton": "📚 Explorar",
         "bugButton": "🐛 Reportar un error",
         "languageButton": "🌐 Idioma",
+        "missingPageButton": "📄 Reportar una página faltante",
+        "missingPageTitle": "📄 Reportar una página faltante",
         "darkMode": "🌙 Modo oscuro",
         "lightMode": "☀️ Modo claro"
     }
