@@ -248,9 +248,58 @@ function toggleLanguage() {
 }
 
 
+// Load translations
+async function loadTranslations() {
+    const response = await fetch("translations.json");
+
+    if (!response.ok) {
+        throw new Error("Could not load translations.");
+    }
+
+    return await response.json();
+}
+
+
 // Select a language
-function selectLanguage(language) {
-    alert("Language selected: " + language);
+async function selectLanguage(language) {
+    try {
+        const translations = await loadTranslations();
+
+        const translation = translations[language];
+
+        if (!translation) {
+            alert("Translation not available yet.");
+            return;
+        }
+
+        document.getElementById("search-button").textContent =
+            translation.searchButton;
+
+        document.getElementById("search").placeholder =
+            translation.searchPlaceholder;
+
+        document.getElementById("browse-button").textContent =
+            translation.browseButton;
+
+        document.getElementById("bug-button").textContent =
+            translation.bugButton;
+
+        document.getElementById("language-button").textContent =
+            translation.languageButton;
+
+        const themeButton = document.getElementById("theme-toggle");
+
+        if (document.body.classList.contains("dark")) {
+            themeButton.textContent = translation.lightMode;
+        } else {
+            themeButton.textContent = translation.darkMode;
+        }
+
+        document.getElementById("language-menu").style.display = "none";
+
+    } catch (error) {
+        alert("Something went wrong while loading the translation.");
+    }
 }
 
 
