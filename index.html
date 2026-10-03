@@ -14,10 +14,10 @@
     <h1>Wikitoo</h1>
 
     <input type="text" id="search" placeholder="What do you want to know?">
-    <button onclick="search()">Search</button>
+    <button id="search-button" onclick="search()">Search</button>
 
     <!-- Browse Button -->
-    <button onclick="toggleBrowse()">📚 Browse</button>
+    <button id="browse-button" onclick="toggleBrowse()">📚 Browse</button>
 
     <!-- Browse Menu -->
     <div id="browse-menu" style="display: none;">
@@ -25,7 +25,7 @@
     </div>
 
     <!-- Bug Report Button -->
-    <button onclick="showBugReport()">🐛 Report a Bug</button>
+    <button id="bug-button" onclick="showBugReport()">🐛 Report a Bug</button>
 
     <!-- Bug Report Form -->
     <div id="bug-report" style="display: none;">
@@ -45,7 +45,7 @@
     </div>
 
     <!-- Missing Page Button -->
-    <button onclick="showMissingPageReport()">📄 Report a Missing Page</button>
+    <button id="missing-page-button" onclick="showMissingPageReport()">📄 Report a Missing Page</button>
 
     <!-- Missing Page Report Form -->
     <div id="missing-page-report" style="display: none;">
@@ -62,6 +62,33 @@
 
         <button onclick="submitMissingPageReport()">Send Missing Page Report</button>
         <button onclick="hideMissingPageReport()">Cancel</button>
+    </div>
+
+    <!-- Language Button -->
+    <button id="language-button" onclick="toggleLanguage()">🌐 Language</button>
+
+    <!-- Language Menu -->
+    <div id="language-menu" style="display: none;">
+        <button onclick="selectLanguage('English')">🇺🇸 English</button>
+        <button onclick="selectLanguage('Spanish')">🇪🇸 Español</button>
+        <button onclick="selectLanguage('Chinese')">🇨🇳 中文</button>
+        <button onclick="selectLanguage('Hindi')">🇮🇳 हिन्दी</button>
+        <button onclick="selectLanguage('Bengali')">🇧🇩 বাংলা</button>
+        <button onclick="selectLanguage('Portuguese')">🇵🇹 Português</button>
+        <button onclick="selectLanguage('Russian')">🇷🇺 Русский</button>
+        <button onclick="selectLanguage('Japanese')">🇯🇵 日本語</button>
+        <button onclick="selectLanguage('German')">🇩🇪 Deutsch</button>
+        <button onclick="selectLanguage('French')">🇫🇷 Français</button>
+        <button onclick="selectLanguage('Vietnamese')">🇻🇳 Tiếng Việt</button>
+        <button onclick="selectLanguage('Turkish')">🇹🇷 Türkçe</button>
+        <button onclick="selectLanguage('Korean')">🇰🇷 한국어</button>
+        <button onclick="selectLanguage('Italian')">🇮🇹 Italiano</button>
+        <button onclick="selectLanguage('Arabic')">🇸🇦 العربية</button>
+        <button onclick="selectLanguage('Dutch')">🇳🇱 Nederlands</button>
+        <button onclick="selectLanguage('Polish')">🇵🇱 Polski</button>
+        <button onclick="selectLanguage('Ukrainian')">🇺🇦 Українська</button>
+        <button onclick="selectLanguage('Indonesian')">🇮🇩 Bahasa Indonesia</button>
+        <button onclick="selectLanguage('Greek')">🇬🇷 Ελληνικά</button>
     </div>
 
     <div id="content"></div>
